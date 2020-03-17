@@ -1,0 +1,122 @@
+///////////BREAKPOINTS FOR RESPONSIVE SCREENS////////////
+
+//widescreens
+@include mediaXl{
+   
+    .login{
+              
+
+        &-message{
+            flex: 0 1 400px;
+
+        }
+
+        &-form{
+            flex: 0 0 460px;
+        
+        }
+    }
+    
+}
+    
+    //Desktops and laptop 769px - 1170px
+    @include mediaLg{
+    
+        .login{
+              
+
+            &-message{
+                flex: 0 1 35%;
+
+                .logo{
+                    width: 20rem;
+
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    padding: 0;
+                }
+            }
+
+            &-form{
+                flex: 0 0 35%;
+                margin: 6rem 0;
+                padding: 1rem 2rem;
+                background: rgba($primary-color, 0.2);
+            }
+        }
+        
+    }
+    
+    
+    //Tablets and small laptops 768px
+    @include mediaMd{
+       
+        .login{
+              
+
+            &-message{
+                flex: 0 1 30%;
+
+                .logo{
+                    width: 15rem;
+
+                }
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    line-height: 1.5;
+                    padding: 0;
+                }
+            }
+
+            &-form{
+                flex: 0 0 50%;
+                margin: 6rem 0;
+                padding: 1rem 2rem;
+                background: rgba($primary-color, 0.4);
+            }
+        }
+        
+    }
+    
+    //Smartphones 600px
+    @include mediaSm{
+
+        .login{
+            flex-direction: column;
+            justify-content: center;
+
+            &-message{
+                margin-top: 1rem;
+                flex: 1;
+
+
+                .logo{
+                    width: 10rem;
+                    margin: 0 auto;
+                }
+
+                p{
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    font-weight: 300;
+                    padding: 2rem;
+                    width: 90vw;
+                    text-align: center;
+                    margin: 0 auto;
+
+                }
+            }
+
+            &-form{
+                flex: 1;
+                margin: 1rem;
+                background: rgba($primary-color, 0.8);
+
+            }
+
+        }
+      
+    }

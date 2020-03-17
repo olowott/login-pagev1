@@ -1,0 +1,165 @@
+///////imported fonts/////////////
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800&display=swap');
+
+
+/////////////Variables/////////////
+////COLORS/////
+$primary-color: #ffffff;
+$primary-light-color: #dadada;
+$primary-dark-color: #151515;
+$secondary-color: #263238;
+$info-color:#2196F3;
+$danger-color: #f44336;
+$success-color:#4CAF50;
+$warning-color:#FF9800;
+
+
+$border-radius: 5rem;
+$font-family: 'Montserrat', sans-serif;
+
+//////////////////CORE/////////////
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: $secondary-color;
+    font-weight: 400;
+}
+
+
+/////////////headings/////////////
+
+
+
+
+/////////////FORMS/////////////
+
+.form{
+    padding: 3em 4em;
+}
+
+.form-control{
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.form-control label {
+    color: $secondary-color;
+    display: block;
+    margin-bottom: .5em;
+    font-size: 1.4em;
+}
+
+.form-control input{
+    
+    border: 1px solid rgba($secondary-color,0.6);
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.8em;
+    font-size: 1.4em;
+    font-family: $font-family;
+    border-radius: $border-radius;
+    background: rgba($primary-color, 0.2);
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: $secondary-color;
+}
+
+.form-control.success input{
+    border-color:  var($success-color);
+}
+
+.form-control.error input{
+    border-color: var($danger-color);
+}
+
+.form-control small{
+    color: var($danger-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 1.4em;
+    
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control input[type=submit]{
+    cursor: pointer;
+    background-color: $secondary-color;
+    color: $primary-color;
+    display: block;
+    font-size: 1.4em;
+    padding: 1rem;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: $border-radius;
+    border: none;
+
+    &:hover{
+        background-color: rgba($secondary-color,0.8);
+    }
+}
+
+button {
+    cursor: pointer;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    color: $primary-color;
+    display: block;
+    font-size: 1.4em;
+    padding: 1rem;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: $border-radius;
+
+   
+}
+
+
+
+
+//////////////MOBILE MIXINS/////////////////////
+// media Query Mixins
+@mixin  mediaSm{
+    @media screen and (max-width: 600px){
+
+        @content;
+
+    }
+} 
+
+@mixin  mediaMd{
+    @media screen and (max-width: 768px){
+
+        @content;
+
+    }
+} 
+
+@mixin  mediaLg{
+    @media screen and (min-width: 769px) and (max-width: 1170px){
+        @content;
+
+    }
+} 
+
+@mixin  mediaXl{
+    @media screen and (min-width: 1171px){
+        @content;
+
+    }
+} 

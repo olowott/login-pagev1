@@ -1,0 +1,96 @@
+.login-bg{
+    background: url('../img/login-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.login{
+
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    
+
+
+
+    &-message{
+
+        margin-top: 6rem;
+        flex: 0 1 50%;
+
+
+        .logo{
+            width: 20rem;
+            display: block;
+            margin: 5px auto;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1rem 10rem;
+        }
+
+    }
+
+    &-form{
+        flex: 0 0 35%;
+        padding: 3rem 4rem;
+        background: rgba($primary-color, 0.2);
+        margin: 4rem;
+        border-radius: 30px;
+        
+
+
+        h2{
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $secondary-color;
+        }
+
+        a{
+            
+            color: rgba($secondary-color, 0.8);
+
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+
+        .sign-in{
+            background-color: rgba($primary-color, 0.6);
+            color: $secondary-color;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+
+        }
+
+        .sign-in-dark{
+
+            &:hover{
+                background-color: rgba($secondary-color, 0.8);
+            }
+            
+        }
+
+        
+
+       
+    }
+
+}
+
