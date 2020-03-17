@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "default sass files for scss",
   "main": "index.js",
-  "homepage": "https:olowott.github.io/<git-name>",
+  "homepage": "https:olowott.github.io/login-pagev1",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss dist/css/style.css -w",
     "devserver": "live-server --browser=firefox",
